@@ -13,3 +13,106 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  top: 0;
+  margin: 0;
+}
+
+
+ /* HEADER */
+
+
+.header {
+  position: relative;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 4rem;
+}
+
+.header > .menu_bar {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 800px;
+}
+
+.menu_item {
+  display: inline-block;
+  float: left;
+  width: auto;
+}
+
+.menu_item {
+  margin-right: 10px;
+}
+.menu_item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+a.menu_link {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  height: 100%;
+  padding: 1.5rem 3rem;
+  color: #000;
+  text-decoration: none;
+}
+
+a.menu_link:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+h1.heading_title {
+  clear: both;
+  display: block;
+  margin: 20px 0 40px;
+  text-align: center;
+}
+
+ /* FIGHTERS */
+
+.fighters.list {
+  margin: 30px 0 0;
+}
+
+.fighter_card {
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  width: 25%;
+  min-width: 200px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  /* font-size: 0; */
+}
+
+.fighter_name {
+  text-align: center;
+}
+
+.fighter_pic {
+  box-sizing: border-box;
+  margin: auto;
+  width: 80px;
+  min-width: 70px;
+}
+
+.fighter_detail {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+}
+
+.fighter_detail > .detail {
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  min-width: 70px;
+  padding: 10px;
+}
