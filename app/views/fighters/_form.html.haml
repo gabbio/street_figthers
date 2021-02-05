@@ -1,0 +1,24 @@
+= form_for @fighter do |f|
+  .fighter_name
+    .label
+      %label{for: 'fighter_name'} Nom
+    = f.text_field :name
+  .fighter_energy
+    .label
+      %label{for: 'fighter_energy'} Point de vie
+    = f.number_field :energy
+  .fighter_strength
+    .label
+      %label{for: 'fighter_strength'} Puissance
+    = f.number_field :strength
+  .fighter_stamina
+    .label
+      %label{for: 'fighter_stamina'} Endurance
+    = f.number_field :stamina
+  .fighter_avatar
+    .label
+      %label{for: 'fighter_avatar'} Photo de face
+    = f.file_field :avatar
+
+  .submit
+    = f.submit "Enregistrer"
