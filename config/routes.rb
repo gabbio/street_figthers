@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  get '/accueil'
-  get '/dojo'
-  get '/fabrique'
+  get '/accueil' => 'pages#index'
+  get '/dojo' => 'pages#index'
+  get '/fabrique' => 'pages#index'
 end
