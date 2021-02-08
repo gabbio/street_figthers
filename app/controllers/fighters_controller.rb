@@ -9,10 +9,11 @@ class FightersController < ApplicationController
 
   def create
     @fighter = Fighter.new(fighter_params)
+
     if @fighter.save
-      redirect_to accueil_path
+      redirect_to accueil_path, notice: "Super! Un nouveau combattant."
     else
-      redirect_to new_fighter_path, with: @fighter.errors
+      render new_fighter_path
     end
   end
 
@@ -21,13 +22,13 @@ class FightersController < ApplicationController
   # end
 
   def edit
-    @fighters = Fighter.find(params[:id])
+    @fighter = Fighter.find(params[:id])
   end
 
   def update
-    @fighters = Fighter.find(params[:id])
-    if @fighters.update_attributes(fighter_params)
-      redirect_to @fighter
+    @fighter = Fighter.find(params[:id])
+    if @fighter.update_attributes(fighter_params)
+      redirect_to fighters_path, notice: "#{@fighter.name} est de retour de la salle!"
     else
       redirect_to edit_fighter_path(@fighter), with: @fighter.errors
     end

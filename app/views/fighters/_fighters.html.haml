@@ -1,0 +1,23 @@
+.fighters.list
+  - @fighters.each do |fighter|
+    .fighter_card
+      .fighter_name
+        %h3
+          = fighter.name
+      .fighter_pic
+        = image_tag(fighter.avatar.variant(resize_to_limit: [80, 80]))
+      .fighter_detail
+        .detail
+          %span.live= image_tag 'healthcare-device.png'
+          = fighter.energy
+        .detail
+          %span.strength= image_tag 'weightlifting.png'
+          = fighter.strength
+        .detail
+          %span.fights= image_tag 'boxing-gloves.png'
+          5
+        .detail
+          %span.wins= image_tag 'medal.png'
+          5
+      .fighter_edit
+        %a.edit_link{href: edit_fighter_path(fighter)} Revitalises-le!

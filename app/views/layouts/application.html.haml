@@ -11,4 +11,8 @@
 
   %body
     = render :partial => 'pages/header'
+    - flash.each do |type, message|
+      %div{ class: "flash #{type}" }
+        %p.message
+          = message
     = yield

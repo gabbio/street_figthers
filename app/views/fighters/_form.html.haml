@@ -1,4 +1,4 @@
-= form_for @fighter do |f|
+= form_with model: fighter, html: { class: 'fighter_form' } do |f|
   .fighter_name
     .label
       %label{for: 'fighter_name'} Nom

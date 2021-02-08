@@ -35,7 +35,7 @@ body {
   display: block;
   margin: 0 auto;
   padding: 0;
-  width: 800px;
+  width: 1100px;
 }
 
 .menu_item {
@@ -72,48 +72,4 @@ h1.heading_title {
   display: block;
   margin: 20px 0 40px;
   text-align: center;
-}
-
- /* FIGHTERS */
-
-.fighters.list {
-  margin: 30px 0 0;
-}
-
-.fighter_card {
-  display: inline-block;
-  box-sizing: border-box;
-  float: left;
-  padding: 10px;
-  width: 25%;
-  min-width: 200px;
-  border: 1px solid #000;
-  border-radius: 15px;
-  /* font-size: 0; */
-}
-
-.fighter_name {
-  text-align: center;
-}
-
-.fighter_pic {
-  box-sizing: border-box;
-  margin: auto;
-  width: 80px;
-  min-width: 70px;
-}
-
-.fighter_detail {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px;
-}
-
-.fighter_detail > .detail {
-  display: inline-block;
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  min-width: 70px;
-  padding: 10px;
 }
