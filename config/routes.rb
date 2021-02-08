@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  get '/accueil'
-  get '/dojo'
-  get '/fabrique'
+  get '/accueil' => 'pages#index'
+  get '/dojo' => 'pages#dojo'
+  get '/fabrique' => 'pages#fabrique'
+
+  resources :fighters, except: :show
 end

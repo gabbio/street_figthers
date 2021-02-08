@@ -1,0 +1,103 @@
+// Place all the styles related to the Fighters controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* FORM */
+
+.form_wrapper {
+  display: block;
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 30px 100px;
+  width: 500px;
+
+  h2, h4 {
+    text-align: center;
+  }
+
+  form.fighter_form {
+    display: block;
+    margin: 50px auto;
+    width: 300px;
+  
+    & > div {
+      margin: 15px auto 0;
+  
+      // &.submit {
+      //   margin: auto;
+      // }
+    }
+  
+    .fighter_name {
+      text-align: left;
+    }
+  }
+}
+
+/* FIGHTERS */
+
+.fighters.list {
+  margin: 30px 0 0;
+}
+
+.fighter_card {
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  width: 320px;
+  min-width: 200px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  /* font-size: 0; */
+
+  .fighter_name {
+    text-align: center;
+  }
+  
+  .fighter_pic {
+    box-sizing: border-box;
+    margin: auto;
+    width: 80px;
+    min-width: 70px;
+  }
+  
+  .fighter_detail {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .fighter_detail > .detail {
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    min-width: 70px;
+    padding: 10px;
+  }
+
+  .fighter_edit {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 30px;
+
+    .edit_link {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      left: 149px;
+      margin-left: -75px;
+      background-color: #000;
+      width: 150px;
+      height: 100%;
+      text-decoration: none;
+      line-height: 30px;
+      text-align: center;
+      vertical-align: middle;
+      color: #fff;
+    }
+  }
+}
